@@ -1,0 +1,365 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: blue; */
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Navbar   */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-color: whitesmoke;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    box-shadow: 0px 2px 10px black;
+    font-family: 'baloo bhai', cursive;
+    z-index: 5;
+}
+
+.nav-header {
+    font-size: 50px;
+    margin-left: 40px
+}
+
+.navbar ul {
+    display: flex;
+    /* margin-left: 0; */
+    margin-right: 10px;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.navbar ul li {
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    margin-left: 30px
+}
+
+.navbar ul li::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    /* z-index: 4; */
+    background-color: yellow;
+    bottom: 0;
+    /* top: 20px; */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    z-index: 5;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    justify-content: center;
+    /* min-width: 10px; */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /* padding: 12px 16px; */
+    /* z-index: 7; */
+}
+
+.dropdown-content ul {
+    display: block;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    justify-content: center;
+    display: block;
+    text-align: center;
+}
+
+.imager {
+    /* background-image: url('https://us.123rf.com/450wm/booblgum/booblgum1804/booblgum180400246/99485676-india-city-skyline-with-color-buildings-isolated-on-white-delhi-mumbai-bangalore-chennai-vector-illu.jpg?ver=6'); */
+    width: 100%;
+    height: 50%;
+    position: relative;
+    z-index: 100;
+}
+
+.images {
+    position: relative;
+    /* background: url('https://www.kuberebikes.com/static/media/mdls.d6f112c6.png'); */
+    height: 60vh;
+    margin-bottom: 40px
+    /* position: relative; */
+    /* z-index: 100; */
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 10%; */
+    margin-left: 40px;
+    /* background-color: black; */
+    font-size: 15px;
+}
+
+.touch ul {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-right: 40px
+}
+
+.touch ul li {
+    list-style: none;
+    margin: 20px;
+    font-weight: 600;
+    color: grey
+}
+
+.links ul {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-right: 40px
+}
+
+.links ul li {
+    list-style: none;
+    margin: 20px;
+    font-weight: 600;
+    color: grey
+}
+
+.models ul {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-right: 40px
+}
+
+.models ul li {
+    list-style: none;
+    margin: 20px;
+    font-weight: 600;
+    color: grey
+}
+
+
+/* Features */
+
+.features {
+    position: inherit;
+    width: 100%;
+    margin-top: 30%;
+}
+
+.features h1 {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.features h1::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    background-color: blue;
+    color: blue;
+    bottom: 0px;
+    /* left: 45px; */
+    /* top: 0; */
+    right: 48%;
+}
+
+.feature-elements {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-elements ul {
+    display: grid;
+    position: relative;
+    font-size: 40px;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+}
+
+.feature-elements ul li {
+    position: relative;
+    margin: 100px;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    /* background-color: linear-gradient(to right, blue, lightblue); */
+    border-radius: 50%;
+    background-color: yellow;
+    margin-top: 20px;
+    /* color: white; */
+    /* padding-top: 1px; */
+}
+
+.feature-elements ul li p {
+    font-size: 20px;
+}
+
+
+/* About */
+
+.about {
+    left: 0;
+    text-align: left;
+    margin: 40px;
+    height: 60vh;
+    background-color: rgb(253, 249, 249);
+}
+
+.about-header {
+    font-size: 40px;
+}
+
+.about-header::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    color: blue;
+}
+
+.about-detailed {
+    color: grey;
+    font-size: 15px;
+    margin: 20px;
+    font-weight: 600;
+}
+
+.about .choose {
+    font-size: 22px;
+    margin: 20px;
+    font-weight: 500;
+}
+
+.about ul {
+    margin: 20px;
+    color: grey;
+    font-weight: 600;
+    font-size: 15px
+}
+
+.about ul li {
+    margin: 10px
+}
+
+
+/* scooter */
+
+.driver {
+    width: 100%;
+    /* position: relative; */
+    background-color: turquoise;
+    background-repeat: no-repeat;
+}
+
+.scooter {
+    background: url('https://s1.gifyu.com/images/output-onlinegiftools.gif'), no-repeat;
+    width: 70%;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    /* background-color: black; */
+    position: relative;
+    overflow-x: hidden;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    animation: scoot 2s linear 0s infinite normal none;
+    animation-play-state: running;
+}
+
+@keyframes scoot {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+/* media queries */
+
+@media screen and (max-width:800px) {
+    */ .features {
+        justify-content: center;
+        margin-top: 10%;
+    }
+    .feature-elements ul {
+        display: grid;
+        position: relative;
+        font-size: 40px;
+        grid-template-columns: 1fr auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: black;
+        cursor: pointer;
+    }
+    .about {
+        width: 100%;
+    }
+    .footer {
+        width: 100%;
+        display: block
+    }
+    .footer ul {
+        width: auto;
+        justify-content: center;
+        text-align: center;
+        /* margin-left: 10px */
+    }
+    .imager {
+        width: auto;
+        height: auto;
+        margin: 10px
+    }
+    .images {
+        width: 100%;
+        height: auto;
+        background-color: purple;
+    }
+    .img {
+        width: 100%;
+    }
+    .end {
+        display: flex;
+        flex-direction: column;
+    }
+}
